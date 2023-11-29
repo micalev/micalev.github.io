@@ -11,8 +11,8 @@ addEventListener("DOMContentLoaded", async (event) =>{
 
 
    const selectBars = Array.from(document.querySelectorAll(".select"));
-   const artists = await fetchData("./starting-files/artists.json");
-   const genres = await fetchData("./starting-files/genres.json");
+   const artists = await fetchData("json-files/artists.json");
+   const genres = await fetchData("json-files/genres.json");
    const pages = Array.from(document.querySelector("main").children);
    const topLists = Array.from(document.querySelectorAll('.mainList'));
    const radioBtns = Array.from(document.querySelectorAll('input[type="radio"]'));
